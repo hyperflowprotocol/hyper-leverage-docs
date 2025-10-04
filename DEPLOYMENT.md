@@ -1,0 +1,16 @@
+# Deployment Notes
+
+Frontend: Vercel (branch beta)  
+Backend: AWS EC2 + PM2 + Nginx  
+Database: RDS Postgres 16  
+CI/CD: GitHub Actions → auto-deploy on push to main  
+Secrets: AWS Secrets Manager  
+Monitoring: Grafana Cloud + Loki + Sentry
+
+## Environment Variables
+HIP3_RPC=https://rpc.hyperliquid.net  
+POSTGRES_URL=…  
+API_KEY=…  
+ORACLE_FEED_URL=https://oracle.hyperleverage.app  
+
+Halts trigger alerts to Discord Ops and SMS.
